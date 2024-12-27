@@ -262,6 +262,38 @@ veri_pivot_takim_cinsiyet =veri_pivot_takim_cinsiyet.sort_values(by ="total", as
 
 veri_pivot_takim_cinsiyet.to_excel("veri_pivot_takim_cinsiyet.xlsx",)
 
+# %% outlier detection
+"""
+yas = veri.yas
+
+plt.hist(yas, bins = 100)
+plt.show()
+
+Q1 = np.percentile(yas, 25)
+
+Q3 = np.percentile(yas, 75)
+
+IQR = Q3-Q1
+
+outlier_step = 1*5 + IQR
+
+upper = Q3 + outlier_step
+lower = Q1- outlier_step
+
+#outlier degerlerinin indeklerinin tespiti
+outlier_list_col = df[(df[c] < lower) | (df[c]> upper)].index
+
+outlier_indices.extend(outlier_list_col)
 
 
+veri_anomali = veri.loc[anomaliTespiti(veri, ["yas","kilo","boy"])]
+anomali_spor = veri_anomali.spor.value_counts()
+anomali_etkinlik = veri_anomali.etkinlik.value_counts()
 
+plt.figure()
+plt.bar(anomali_sapor.index, anomali_spor.values)
+plt.xticks(rotation = 30)
+
+anomali_index_list = veri_anomali.index.tolist()
+veri_cleaned = veri.drop(index = anomali_index_list)
+"""
