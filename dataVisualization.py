@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -189,9 +189,6 @@ sns.countplot(x="sehir", data=veri)
 plt.xticks(rotation=90)
 plt.show()
 
-
-
-=======
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -382,6 +379,3 @@ sns.countplot(x="sehir", data=veri)
 plt.xticks(rotation=90)
 plt.show()
 
-
-
->>>>>>> 5423c9480c08cd8ee3229f1d3ec760838be12825

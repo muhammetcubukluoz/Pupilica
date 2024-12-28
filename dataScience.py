@@ -598,4 +598,3 @@ plt.xticks(rotation = 30)
 anomali_index_list = veri_anomali.index.tolist()
 veri_cleaned = veri.drop(index = anomali_index_list)
 """
->>>>>>> 5423c9480c08cd8ee3229f1d3ec760838be12825
