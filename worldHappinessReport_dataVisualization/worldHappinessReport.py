@@ -11,10 +11,14 @@ sns.scatterplot(x= "Happiness Score", y = "Economy (GDP per Capita)", hue = "Yea
 plt.title("Happiness Score vs Economy (GDP per Capita)")
 plt.show()
 
-
 plt.figure()
 sns.regplot(x= "Happiness Score", y = "Economy (GDP per Capita)",data = happinessData, scatter_kws={"alpha":0.2})
 plt.title("Happiness Score vs Economy (GDP per Capita) with Line Graph")
+plt.show()
+
+plt.figure()
+sns.regplot(data=happinessData, x="Family", y="Happiness Score", scatter_kws={"alpha":0.2}, line_kws={"color": "red"})
+plt.title("Happiness Score vs Family (Scatter + Regression Line)")
 plt.show()
 
 plt.figure()
