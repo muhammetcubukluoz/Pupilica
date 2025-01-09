@@ -25,7 +25,7 @@ veri.rename(columns={'world_rank'             : 'dunya_siralama',
                      'student_staff_ratio'    : 'ogrenci_calisan_orani', 
                      'international_students' : 'uluslararası_ogrenci',
                      'female_male_ratio'      : 'kadin_erkek_orani',
-                     'year'                   : 'yil'}, inplace=True) # inplace = True dediğimiz zaman ismi değiştirilen veri otomatik olarak veri variable'a kaydedili
+                     'year'                   : 'yil'}, inplace=True)
 
 # %%plotly line + scatter plot
 df = veri.iloc[:100,:]
