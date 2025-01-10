@@ -176,8 +176,7 @@ copyData["year"].unique()
 columns = [col for col in copyData.columns if col != 'year']  # 'year' dışındaki tüm sütunları al
 columns.append('year')  # 'year' sütununu en sona ekle
 
-# Yeni sütun sırasına göre veri setini yeniden düzenle
-copyData = copyData[columns]
+
 
 copyData.info()
 
