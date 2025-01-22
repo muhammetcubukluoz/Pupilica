@@ -177,6 +177,5 @@ columns = [col for col in copyData.columns if col != 'year']  # 'year' dışınd
 columns.append('year')  # 'year' sütununu en sona ekle
 
 
-
 copyData.info()
 
