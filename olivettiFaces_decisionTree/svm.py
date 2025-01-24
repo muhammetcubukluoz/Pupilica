@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 digits = load_digits()
 
 X = digits.data
+
 y = digits.target
 
 # visulization
